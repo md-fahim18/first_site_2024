@@ -59,8 +59,7 @@ nav li {
 }
 
 /* main section styles */
-main,
-footer {
+body main {
   max-width: 1400px !important;
   margin: 0px auto;
   margin-top: 20px;
