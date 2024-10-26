@@ -107,6 +107,48 @@ footer {
   width: 165px;
   margin-top: 1.25rem;
 }
+.features-title {
+  font-family: "Roboto", sans-serif; /* Modern, clean font */
+  color: #2c3e50; /* Dark blue-gray for the text */
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Space below the heading section */
+}
+.features-description {
+  font-size: 1.1rem; /* Size for the paragraph text */
+  font-weight: 400; /* Regular weight for a balanced look */
+  color: #7f8c8d; /* Softer gray for the paragraph */
+  margin-top: 10px; /* Space above the paragraph */
+  line-height: 1.6; /* Improved readability */
+  max-width: 800px; /* Limit width for better readability */
+  margin: 10px auto; /* Center the paragraph */
+}
+.features-container {
+  display: flex;
+  margin-top: 130px;
+  gap: 100px;
+}
+.features-container .card {
+  background-color: #fff; /* White background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+  padding: 20px; /* Padding inside the card */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  margin-top: 1.25rem;
+}
+.card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  transform: translateY(-4px); /* Slight lift on hover */
+}
+.features-card-container .card-title {
+  font-size: 1.5rem; /* Adjusted font size for title */
+  color: #333; /* Darker text color for better readability */
+  margin-bottom: 10px; /* Space below the title */
+}
+.features-card-container .card-description {
+  font-size: 1rem; /* Font size for paragraph */
+  color: #555; /* Softer color for paragraph text */
+  line-height: 1.6; /* Improved readability with line-height */
+}
 
 footer {
   text-align: center;
@@ -121,8 +163,14 @@ footer {
   }
   nav,
   .facts-cards-container,
-  .sponsor-img-container {
+  .sponsor-img-container,
+  .features-container {
     flex-direction: column;
+  }
+  .feature-img img {
+    width: 100%;
+    height: auto;
+    text-align: center;
   }
   .facts-cards-container {
     gap: 10px;
@@ -141,8 +189,12 @@ footer {
   header {
     padding: 30px;
   }
-  nav {
+  nav,
+  .features-container {
     flex-direction: column;
+  }
+  .feature-img img {
+    width: 100%;
   }
   .team-container {
     flex-direction: column;
