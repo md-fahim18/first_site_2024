@@ -61,7 +61,7 @@ nav li {
 /* main section styles */
 main,
 footer {
-  max-width: 1400px;
+  max-width: 1400px !important;
   margin: 0px auto;
   margin-top: 20px;
 }
